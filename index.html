@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Røde Kors</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="burger-icon-container">
+            <div id="burger-icon">
+                <div class="burger burger-top"></div>
+                <div class="burger burger-mid"></div>
+                <div class="burger burger-bot"></div>
+            </div>
+        </div>
+        <div id="menu">
+            <h3>Test deg selv</h3>
+            <ul class="main-nav">
+                <li id="quiz-btn">Førstehjelp-Quizen</li>
+            </ul>
+            <h3>Lær førstehjelp</h3>
+            <ul class="main-nav">
+                <li id="hlr-btn">Hjerte-lunge-redning (HLR)</li>
+                <li id="fremmedlegeme-btn">Fremmedlegeme i hals</li>
+                <li id="slag-btn">Slag</li>
+                <li id="blodninger-btn">Store blødninger</li>
+                <li id="benbrudd-btn">Benbrudd</li>
+            </ul>
+            <p id="tel">Nødnummer <span>113</span></p>
+            <img class="logo menu-logo" id="restart" src="graphics/rodekors-white-logo.svg">
+        </div>
+        
+        <div class="main-content">
+                <video id="intro-vid" width="320px" autoplay>
+                    <source src="videos/rodekors-introvideo.mp4" type="video/mp4">
+                    <source src="videos/rodekors-introvideo.ogg" type="video/ogg">
+                </video>
+                <h2 id="intro-text">Når sekundene teller...</h2>
+                <button id="intro-quiz">Ta førstehjelp-quizen</button>
+                <img class="logo" src="graphics/rodekors.svg">
+                
+            <div class="screen quiz-screen">
+                <h2>Quiz</h2>
+                <div class="quiz-info">
+                    <h3>Førstehjelp-Quizen</h3>
+                    <p>Er du nærmest den som blir akutt syk eller skadet er det du som må ta ansvar og hjelpe. Din kunnskap og innsats kan redde liv.</p>
+                    <p>Test deg selv med denne quizen og se hvordan du ligger ann blant vennene dine! </p>
+                    <button id="start-quiz">Start quiz</button>
+                </div>
+                <div class="quiz-content">
+                    <div id="quizContainer">
+                        <div class="countdown">10</div>
+                        <div id="question" class="question"></div>
+                        <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+                        <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+                        <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+                        <button id="nextButton" class="quiz-button">Gå videre</button>
+                    </div>
+                    <div id="result" class="result" style="display:none;">
+                        <div id="yourResult"></div>
+                        <div id="shareQuiz">Del på facebook</div>
+                    </div>
+                </div>
+                <div class="quiz-answers">
+                    
+                </div>
+            </div>
+            
+            <div class="screen hlr-screen">
+                <h2>HLR</h2>
+                <img class="image" src="images/hlr-image.jpg">
+                <div class="screen-content">
+                    <h3>Hjerte-lunge-redning (HLR)</h3>
+                    <p>Hjerte-lunge-redning skal <b>bare utføres på personer som er bevisstløse og ikke puster normalt.</b> Du må først undersøke  pasienten i inntil 10 sekunder for å kunne avgjøre dette. Når du konkluderer med at pasienten er bevisstløs og ikke puster normalt, ring 1-1-3 og begynn med HLR</p>
+                    <div class="accordion-group">
+                        <button class="accordion"><span class="accordion-cross">+</span> Undersøk personen først</button>
+                        <div class="panel">
+                        <p>Hjerte-lunge-redning skal bare utføres på personer som er bevisstløse og ikke puster normalt. Du må først undersøke  pasienten i inntil 10 sekunder for å kunne avgjøre dette. Når du konkluderer med at pasienten er bevisstløs og ikke puster normalt, ring 1-1-3 og begynn med HLR</p>
+                        </div>
+                    
+                        <button class="accordion"><span class="accordion-cross">+</span> HLR på voksne</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Se etter tegn til liv</li>
+                                <li>Rist forsiktig i pasienten og rop «Er du våken?»</li>
+                                <li>Gi frie luftveier</li>
+                                <li>Sjekk om pasienten puster normalt i inntil 10 sekunder</li>
+                                <li>Puster ikke normalt? Rop etter hjelp</li>
+                                <li>Ring 1-1-3 og sett mobiltelefonen på høyttaler</li>
+                                <li>Gi 30 brystkompresjoner</li> 
+                            </ul>
+                        </div>
+
+                        <button class="accordion"><span class="accordion-cross">+</span> HLR på barn fra 1 år til pubertet</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Se etter tegn til liv</li>
+                                <li>Rist forsiktig i pasienten og rop «Er du våken?»</li>
+                                <li>Gi frie luftveier:</li>
+                                <li>løft frem/opp haken ved hjelp av 2 fingre</li>
+                                <li>legg en hånd på pannen og bøy hodet bakover</li>
+                                <li>Puster ikke normalt?</li>
+                                <li>Rop på hjelp, ring 1-1-3 og sett mobiltelefonen på høyttaler</li>
+                                <li>Gi 5 innblåsinger</li>
+                                <li>Gi 30 brystkompresjoner:</li>
+                                <li>komprimer med 1 eller 2 hender avhengig av barnets størrelse</li>
+                                <li>trykk ned 1/3 del av brystkassens dybde</li>
+                                <li>Trykk med en takt på 100 -120 kompresjoner pr. minutt</li>
+                                <li>Gi deretter 2 innblåsinger</li>
+                            </ul>
+                            <p>Fortsett med 30 brystkompresjoner og 2 innblåsinger (30:2) helt til ambulansepersonell eller annet redningspersonell tar over.</p>
+                        </div>
+
+                        <button class="accordion"><span class="accordion-cross">+</span> HLR på Spebarn</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Se etter tegn til liv</li>
+                                <li>Gi frie luftveier</li>
+                                <li>kun løft frem/opp haken ved hjelp av 2 fingre</li>
+                                <li>ikke bøy hodet bakover men hold hodet i nøytral posisjon ved å legge en hånd på pannen</li>
+                                <li>Puster ikke normalt?</li> 
+                                <li>Rop på hjelp, ring 1-1-3 og sett mobiltelefonen på høyttalende</li>
+                                <li>Gi 5 innblåsinger</li>
+                                <li>Gi 30 brystkompresjoner</li>
+                                <li>bruk kun 2 fingre til å komprimere med</li>
+                                <li>trykk ned 1/3 del av brystkassens dybde</li>
+                                <li>Trykk med en takt på 100 -120 kompresjoner pr. minutt</li>
+                                <li>Gi deretter 2 innblåsinger</li>
+                            </ul>
+                        </div>
+
+                        <button class="accordion"><span class="accordion-cross">+</span> Bruk av hjertestarter</button>
+                        <div class="panel">
+                            <p>Et viktig førstehjelpstiltak er å bruke hjertestarter.</p>
+                            <p>Dersom du har tilgang på en hjertestarter så bruk den. Alle hjertestartere som er tilgjengelige for publikum leveres med norsk stemme som veileder deg i bruk. Følg denne veiledningen.</p>
+                            <p class="important">Det er ikke farlig å koble på en slik hjertestarter.</p>
+                            <p>Den vil ikke avgi støt dersom den analyserer situasjonen til at den ikke skal gjøre det. Du kan ikke gjøre noe galt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="screen fremmedlegeme-screen">
+                <h2>Fremmedlegeme i hals</h2>
+            </div>
+            
+            <div class="screen slag-screen">
+                <h2>Slag</h2>
+            </div>
+            
+            <div class="screen blodninger-screen">
+                <h2>Store blødninger</h2>
+            </div>
+            
+            <div class="screen benbrudd-screen">
+                <h2>Benbrudd</h2>
+            </div>
+            
+        </div>
+        
+    </div>
+ 
+       
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>

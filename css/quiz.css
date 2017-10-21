@@ -1,0 +1,129 @@
+.quiz-info{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-info p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.quiz-info.hide{
+    display: none;
+}
+
+.quiz-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 60px 40px;
+    top: 0px;
+    transform: translateX(375px);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.quiz-content.active{
+    transform: translateX(0px);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* STYLING QUIZ CONTAINER */
+
+.countdown{
+    font-size: 52px;
+    font-weight: 100;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 0px;
+}
+
+/* STYLING QUESTIONS */
+.question{
+    text-align: center;
+    font-size: 16px;
+    margin: 35px 0px;
+}
+
+/* STYLING ANSWERS */
+input[type="radio"] {
+    display: none;
+}
+
+.option label{
+    text-align: center;
+}
+
+.option span{
+    display: block;
+    text-align: center;
+    padding: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked ~ * { 
+    background:#35393c;
+    color: white; 
+}
+
+
+/* STYLING QUIZ-BUTTON */
+#start-quiz{
+    margin-top: 25px;
+}
+
+.quiz-button{
+    position: absolute;
+    width: 164px;
+    left: 50%;
+    transform: translateX(-82px);
+    bottom: 40px;
+    font-size: 16px;
+    border: none;
+    background: #BD1F25;
+    color: white;
+    padding: 25px 35px;
+    cursor: pointer;
+}
+
+.result{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+}
+
+/* STYLING RESULTS */
+#yourResult{
+    margin-top: 100px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#yourResult span{
+    font-size: 32px;
+    line-height: 100px;
+}
+
+#shareQuiz{
+    bottom: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 25px 35px;
+    background: #395B9A;
+}

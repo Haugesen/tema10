@@ -1,0 +1,151 @@
+/* HAMBURGER ICON STYLING */
+#burger-icon{
+    position: absolute;
+    z-index: 50;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    background: #e6e6e6;
+}
+
+.burger{
+    height: 2px;
+    width: 25px;
+    background: #232426;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#burger-icon.active{
+    transform: translateX(310px);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.burger-bot.active {
+    background: #5c5f60;
+    background: #BD1F25;
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.burger-top.active {
+    background: #5c5f60;
+    background: #BD1F25;
+    transform: translateY(7px) rotate(45deg);
+}
+
+.burger-mid.active {
+    background: #5c5f60;
+    background: #BD1F25;
+    transform: translateX(100px);
+}
+
+/* MENU STYLING */
+#menu{
+    overflow: hidden;
+    width: 310px;
+    height: 100%;
+    padding-top: 100px;
+    position: absolute;
+    z-index: 25;
+    background: #232426;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-310px);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#menu.active {
+    transform: translateX(0px);
+    transition-timing-function: ease-in-out;
+}
+
+/* NAVIGATION STYLING */
+.logo{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    bottom: 50px;
+}
+
+.menu-logo{
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-60px);
+    width: 120px;
+}
+
+.main-nav{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#menu h3{
+    padding: 0px 50px;
+    margin: 15px 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+}
+
+.main-nav li{
+    padding: 18px 30px 18px 55px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 300;
+    color: #373a3b;
+    color: #b4b4b4;
+    border-left: 5px solid rgba(189, 31, 37, 0);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.main-nav :first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.main-nav li:hover{
+    color: white;
+    border-left: 5px solid #BD1F25;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* NØDNUMMER STYLING */
+#tel {
+    position: absolute;
+    bottom: 45px;
+    left: 60px;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;
+    color: #BD1F25;
+    color: white;
+    word-spacing: 5px;
+}
+
+#tel span{
+    font-weight: 500;
+    color: white;
+    color: #BD1F25;
+    letter-spacing: 1px;
+}
+
+#tel:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
